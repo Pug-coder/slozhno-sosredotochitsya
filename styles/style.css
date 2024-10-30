@@ -1,5 +1,147 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  
+}
+
+.header {
+  padding: 10px;
+  block-size: 100vh; /* Высота контейнера 100% от высоты видимой части окна */
+  display: grid;
+
+  /* Настройка строк в сетке:
+     - Первая часть: создаём 3 строки, которые могут менять свои размеры в зависимости от содержимого
+     - minmax(min-content, max-content): 
+       - min-content: минимальная высота строки, при которой текст не будет обрезан (переносится)
+       - max-content: максимальная высота строки, необходимая для отображения текста в одной строке без переноса.
+     - Вторая часть: создаём 2 строки с минимальным размером, который будет зависеть от содержания (не будет расширяться)
+  */
+  grid-template-rows:repeat(3, minmax(min-content, max-content)) repeat(2, min-content);
+  grid-template-columns: repeat(2, 1fr);
+  margin-block-end: 40px;
+}
+
+.decorated-zone::before {
+  content: '';
+  display: block;
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: end;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--decor-color);
+  border-top: 1px solid var(--decor-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  grid-column: 1;
+  align-self: start;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--decor-color);
+  border-bottom: 1px solid var(--decor-color);
+}
+
+.header__decoration {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: end;
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 3px;
+  margin-right: 10px;
+  gap: 10px;
+}
+
+.header__decoration::before {
+  content: 'REC';
+  position: relative;
+  color: var(--decor-color);
+  margin-right: 10px;
+  text-align: center;
+  line-height: 139%;
+}
+
+.header__decoration::after {
+  content: '';
+  display: block;
+  position: relative;
+  justify-self: start;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  fill: var(--decor-color);
+  background-color: var(--decor-color);
+  box-shadow: 0 0 4px 2px var(--decor-color);
+}
+
+.header__theme-menu {
+  grid-column: 2;
+  justify-self: end;
+  margin-top: 39px;
+  margin-bottom: 65px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  list-style: none;
+}
+
+.header__theme-menu-button {
+  display: inline-flex;
+  width: 70px;
+  height: 26px;
+  padding: 0px 13px;
+  background: transparent;
+  color: var(--button-color);
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-transform: lowercase;
+  appearance: none;
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--button-color);
+  pointer-events: none
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-border-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--button-color);
+}
+.header__title {
+  grid-column: 1 / 3;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color); /* был лишний 0 */
+}
+
+.header__text {
+  grid-row: 4 / 5;
+  grid-column: 1 / 3;
+  justify-self: end;
+  margin-bottom: 31px;
+}
+
+.title-decor {
+  font-weight: 700;
+  font-size: 18px;
+  background: var(--accent-color);
+  line-height: var(--line-height);
+  color:var(--title-decor-text-color);
 }
