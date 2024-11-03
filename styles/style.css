@@ -1,6 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  
+  font-family: var(--main-page-font);
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -122,6 +126,7 @@
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--button-color);
 }
+
 .header__title {
   grid-column: 1 / 3;
   font-weight: 700;
@@ -129,6 +134,7 @@
   line-height: 83%;
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color); /* был лишний 0 */
+  margin-bottom: 55px;
 }
 
 .header__text {
@@ -141,7 +147,8 @@
 .title-decor {
   font-weight: 700;
   font-size: 18px;
-  background: var(--accent-color);
+  background: var(--title-decor-color);
   line-height: var(--line-height);
   color:var(--title-decor-text-color);
 }
+
