@@ -48,7 +48,9 @@
     --line-height: 130%;
     --main-page-font: 'IBM Plex Mono', sans-serif;
     
-    --background-image: url(../images/cover-image-light.png);   
+    --background-image: url(../images/cover-image-light.png);
+
+    --card-text-color: #353430;
     }
 }
 
@@ -68,5 +70,7 @@
   --main-page-font: 'IBM Plex Mono', sans-serif;
   
   --background-image: url(../images/cover-image-light.png);
+
+  --card-text-color: #353430;
 
 }

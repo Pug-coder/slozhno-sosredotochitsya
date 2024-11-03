@@ -20,6 +20,7 @@
 
   --background-image: url(../images/cover-image-dark.png);
   
+  --card-text-color: #f1b2ce;
 }
 
 .page.theme_dark {
@@ -38,5 +39,6 @@
   --main-page-font: 'IBM Plex Mono', sans-serif;
 
   --background-image: url(../images/cover-image-dark.png);
-
+  
+  --card-text-color: #f1b2ce;
 }
