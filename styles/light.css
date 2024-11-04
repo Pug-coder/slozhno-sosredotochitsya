@@ -41,7 +41,10 @@
 
     --title-decor-color: #ff8dcb;
     --title-decor-text-color: #000028;
-  
+    
+    --title-font-weight: 700;
+    --page-title-line-height: 83%;
+
     --button-color: #353430;
     --button-border-color: rgba(50, 49, 45, 0.4);
   
@@ -62,6 +65,9 @@
 
   --title-decor-color: #ff8dcb;
   --title-decor-text-color: #353430;
+
+  --title-font-weight: 700;
+  --page-title-line-height: 83%;
 
   --button-color: #353430;
   --button-border-color: rgba(50, 49, 45, 0.4);

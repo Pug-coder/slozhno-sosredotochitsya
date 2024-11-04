@@ -8,6 +8,9 @@
   --title-decor-color: #ff0070;
   --title-decor-text-color: #000028;
 
+  --title-font-weight: 700;
+  --page-title-line-height: 83%;
+
   --button-color: #ff0070;
   --button-border-color: rgba(255, 0, 112, 0.4);
 
@@ -17,6 +20,6 @@
   --background-image: url(../images/cover-image-dark.png);
 
   --suggection-font-weight: 400;
-  
+
   --card-text-color: #f1b2ce; 
 }
