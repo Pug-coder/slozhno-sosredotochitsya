@@ -21,6 +21,7 @@
   --line-height: 130%;
   --main-page-font: 'IBM Plex Mono', sans-serif;
 
+  --background-color: #00183f; /* -__________- */
   --background-image: url(../images/cover-image-dark.png);
   
   --card-text-color: #f1b2ce;
@@ -44,6 +45,7 @@
   --line-height: 130%;
   --main-page-font: 'IBM Plex Mono', sans-serif;
 
+  --background-color: #00183f; /* -__________- */
   --background-image: url(../images/cover-image-dark.png);
   
   --card-text-color: #f1b2ce;

@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
   font-family: var(--main-page-font);
-  background-image: var(--background-image);
+  background-color: var(--background-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -22,6 +22,9 @@
   grid-template-rows:repeat(3, minmax(min-content, max-content)) repeat(2, min-content);
   grid-template-columns: repeat(2, 1fr);
   margin-block-end: 40px;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
 }
 
 .decorated-zone::before {

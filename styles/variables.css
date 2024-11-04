@@ -16,10 +16,11 @@
   --line-height: 130%;
   --main-page-font: 'IBM Plex Mono', sans-serif;
 
+  --background-color: #000028; /* -__________- */
   --background-image: url(../images/cover-image-dark.png);
 
   --suggection-font-weight: 400;
 
   --card-text-color: #f1b2ce;
-  
+
 }

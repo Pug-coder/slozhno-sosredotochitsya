@@ -8,6 +8,7 @@
   --accent-color:#ff8dcb;
 
   --title-color: #ffc2e6;
+  
   --title-decor-text-color: #000028;
 
   --button-color: #ff0070;
@@ -16,11 +17,12 @@
   --line-height: 130%;
   --main-page-font: 'IBM Plex Mono', sans-serif;
   
+  --background-color: #fff1f7; /* -__________- */
   --background-image: url(../images/cover-image-light.png);
 }
 
 /* визуаьно скрываем элемент с REC */
-.theme_light .header__decoration  {
+.theme_light .header__decoration {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -30,6 +32,7 @@
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
   white-space: nowrap;
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -51,6 +54,7 @@
     --line-height: 130%;
     --main-page-font: 'IBM Plex Mono', sans-serif;
     
+    --background-color: #fff1f7; /* -__________- */
     --background-image: url(../images/cover-image-light.png);
 
     --card-text-color: #353430;
@@ -75,6 +79,7 @@
   --line-height: 130%;
   --main-page-font: 'IBM Plex Mono', sans-serif;
   
+  --background-color: #fff1f7; /* -__________- */
   --background-image: url(../images/cover-image-light.png);
 
   --card-text-color: #353430;
