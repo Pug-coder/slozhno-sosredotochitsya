@@ -161,7 +161,6 @@
 
 .main__card {
   display: grid;
-  gap: 20px;
   margin-bottom: 20px;
 }
 
@@ -178,6 +177,7 @@
   font-size: 18px;
   line-height: var(--line-height);
   color: var(--title-decor-text-color);
+  margin-bottom: 10px;
 }
 
 .title-suggestion {
