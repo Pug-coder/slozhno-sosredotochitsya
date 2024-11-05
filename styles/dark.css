@@ -3,7 +3,7 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme_dark {
+:root .theme_dark {
   --decor-color: #ff0070;
   --accent-color: #ff0070;
 
@@ -21,32 +21,9 @@
   --line-height: 130%;
   --main-page-font: 'IBM Plex Mono', sans-serif;
 
-  --background-color: #00183f; /* -__________- */
+  --background-color: #000028; /* -__________- */
   --background-image: url(../images/cover-image-dark.png);
   
   --card-text-color: #f1b2ce;
 }
 
-.page.theme_dark {
-  --decor-color: #ff0070;
-  --accent-color: #ff0070;
-
-  --title-color: #db00ff;
-
-  --title-decor-color: #ff0070;
-  --title-decor-text-color: #000028;
-
-  --title-font-weight: 700;
-  --page-title-line-height: 83%;
-
-  --button-color: #ff0070;
-  --button-border-color: rgba(255, 0, 112, 0.4);
-
-  --line-height: 130%;
-  --main-page-font: 'IBM Plex Mono', sans-serif;
-
-  --background-color: #00183f; /* -__________- */
-  --background-image: url(../images/cover-image-dark.png);
-  
-  --card-text-color: #f1b2ce;
-}
