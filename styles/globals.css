@@ -42,6 +42,7 @@ a {
   text-decoration: none;
 }
 
+button:focus,
 a:focus {
   outline: none;
 }
