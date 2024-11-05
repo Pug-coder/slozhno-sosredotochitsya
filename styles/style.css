@@ -53,7 +53,6 @@
   bottom: 10px;
   left: 10px;
   width: 25px;
-  width: 25px;
   height: 25px;
   border-left: 1px solid var(--decor-color);
   border-bottom: 1px solid var(--decor-color);
@@ -404,7 +403,7 @@
   }
 
   .cards-container {
-    grid-template-columns: 32% 1fr; 
+    grid-template-columns: 32% 1fr;
   }
 
   .header__theme-menu-list {
