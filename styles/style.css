@@ -321,13 +321,13 @@
     gap: 20px;
   }
   
-  .cards-stack-right .main__card-list {
+  .cards-container-issues .main__card-list {
     display: flex;
     flex-direction: column;
     grid-column-start: 2;
   }
   
-  .cards-multi-column .main__card-list {
+  .cards-container-barriers .main__card-list {
     grid-row-start: 2;
     grid-column: span 2;
   }
@@ -338,7 +338,7 @@
     height: 22px; /* Установка фиксированной высоты для ячейки */
   }
 
-  .cards-stack-right-with-title .main__card-list {
+  .cards-container-advice .main__card-list {
     margin-top: 42px;
     grid-column: 2;
     grid-row: 1;
@@ -420,7 +420,7 @@
     margin-bottom: 114px;
   }
   
-  .cards-multi-column .main__card-list {
+  .cards-container-barriers .main__card-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-start: 2;
